@@ -92,7 +92,7 @@ roboflow:
 2. Run the script.
 
 ```bash
-python main.py
+python S3_url_upload.py
 ```
 
 ## Output
