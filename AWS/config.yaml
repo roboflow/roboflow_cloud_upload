@@ -1,0 +1,7 @@
+bucket_name: "roboflowpulltestimages" #"your-bucket-name"
+sample_size: 10
+uploaded_images_file: "uploaded_images.json"
+region: "us-east-2"  # Update this to your bucket's region
+roboflow:
+  api_key: zZehudVV984QOf28TYFB #"YOUR_API_KEY"
+  project_name: vacuum-challenge #"YOUR_PROJECT_NAME"
