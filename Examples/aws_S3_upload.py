@@ -4,9 +4,9 @@ import urllib.parse
 from botocore.config import Config
 
 # ************* SET THESE VARIABLES *************
-S3_BUCKET_NAME = "roboflowpulltestimages"
-ROBOFLOW_API_KEY = "zZehudVV984QOf28TYFB"
-ROBOFLOW_PROJECT_NAME = "vacuum-challenge"
+S3_BUCKET_NAME = "YOUR_S3_BUCKET_NAME"
+ROBOFLOW_API_KEY = "YOUR_ROBOFLOW_API_KEY"
+ROBOFLOW_PROJECT_NAME = "YOUR_ROBOFLOW_PROJECT_NAME"
 # ***********************************************
 
 def generate_presigned_url(bucket_name: str, object_name: str, region: str = 'us-east-2') -> str:

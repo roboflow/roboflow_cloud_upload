@@ -1,29 +1,14 @@
 # Uploading Images to Roboflow using Presigned URLs
 
-This repository contains a script for uploading images to a Roboflow project using presigned URLs. The script supports AWS S3, Azure Blob Storage, and Google Cloud Storage.
+This repository contains a script for uploading images to a Roboflow project using presigned URLs. The script supports AWS S3, Azure Blob Storage, and Google Cloud Storage. Chec out the Examples folder for sample scripts uploading data to Roboflow using signed URLs for each of these cloud storage providers.
 
-## Table of Contents
-1. [Requirements](#requirements)
-2. [Flow Overview](#flow-overview)
-3. [Getting Started](#getting-started)
-    - [AWS S3](#aws-s3)
-    - [Azure Blob Storage](#azure-blob-storage)
-    - [Google Cloud Storage](#google-cloud-storage)
-4. [Usage](#usage)
 
 ## Requirements
 - Python 3.x
 - boto3 for AWS S3
 - azure-storage-blob for Azure
 - google-cloud-storage for Google Cloud
-
-## Flow Overview
-1. Load configuration from a YAML file.
-2. Fetch the list of object keys from the respective cloud storage.
-3. Load a set of already uploaded image IDs.
-4. Generate a presigned URL for each image.
-5. Upload the image to Roboflow using the presigned URL.
-6. Save the IDs of successfully uploaded images.
+- requests
 
 ## Getting Started
 
@@ -95,7 +80,7 @@ def generate_signed_url_gcp(bucket_name, blob_name):
     return url
 ```
 
-## Usage
+## Example API Usage
 
 Load the configuration, fetch object keys, and generate presigned URLs, then use `upload_to_roboflow()` to upload images. Save uploaded image IDs to avoid re-uploads.
 
